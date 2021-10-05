@@ -2,6 +2,9 @@
 
 :root {
   --search-btn: #d56c05;
+  --transparent-color: rgba(255, 255, 255, 0.7);
+  --white-color: #f4f4f4;
+  --black-color: #333;
 }
 
 * {
@@ -12,6 +15,7 @@
 }
 
 .wrapper {
+  display: flex;
   height: 100vh;
   background-image: url("/images/clouds.jpg");
   background-size: cover;
@@ -22,7 +26,7 @@
 
 .sidebar {
   margin-left: auto;
-  color: #fff;
+  color: var(--transparent-color);
   height: 100%;
   width: 450px;
   position: relative;
@@ -55,4 +59,108 @@
   float: right;
   border: none;
   cursor: pointer;
+}
+
+.sidebar form {
+  display: flex;
+}
+
+.sidebar form .form-control {
+  margin: auto;
+  margin-bottom: 0;
+  padding: 10px;
+  width: 70%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--transparent-color);
+  font-size: 1rem;
+  color: var(--white-color);
+}
+
+.sidebar form .form-control::placeholder {
+  color: var(--transparent-color);
+}
+
+.sidebar form .form-control:focus {
+  outline: none;
+  border-bottom: 2px solid var(--white-color);
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  border-color: var(--transparent-color);
+}
+
+.history,
+.details {
+  padding: 30px;
+}
+
+.history {
+  list-style-type: none;
+}
+
+.history .list-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.history .list-item:hover {
+  color: var(--white-color);
+}
+
+.history .list-item span {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.details p:first-child {
+  color: var(--white-color);
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.details p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.details p .result {
+  color: var(--white-color);
+}
+
+/* MAIN SECTION  */
+
+.main-section {
+  display: flex;
+  align-items: end;
+  padding: 5rem;
+  color: var(--white-color);
+}
+
+.main-section h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: 100;
+}
+
+.main-section p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  margin-left: 2.5rem;
+}
+
+.main-section p .date {
+  font-size: 1.5rem;
 }

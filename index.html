@@ -17,6 +17,10 @@
   </head>
   <body>
     <div class="wrapper">
+      <section class="main-section">
+        <h1>36&#176;C</h1>
+        <p class="city">Mumbai <span class="date">10 Sep 2020</span></p>
+      </section>
       <aside class="sidebar">
         <form>
           <input
@@ -24,20 +28,32 @@
             class="form-control"
             placeholder="Enter location"
           />
+
           <button type="submit" class="btn">
             <i class="fas fa-search"></i>
           </button>
         </form>
         <ul class="history">
-          <li class="list-item">&times;Delhi</li>
-          <li class="list-item">&times;Surat</li>
+          <li class="list-item"><span>&times;</span> Mumbai</li>
+          <li class="list-item"><span>&times;</span> Delhi</li>
+          <li class="list-item"><span>&times;</span> Surat</li>
+          <li class="list-item"><span>&times;</span> Indore</li>
+          <li class="list-item"><span>&times;</span> Srinagar</li>
         </ul>
+
+        <hr />
 
         <div class="details">
           <p class="detail-head">Weather Details</p>
-          <p class="detail-value">Cloudy: 1%</p>
-          <p class="detail-value">Humidity: 1%</p>
-          <p class="detail-value">Wind: 1m/s</p>
+          <p class="detail-value">
+            Cloudy: <span class="result">1&nbsp;%</span>
+          </p>
+          <p class="detail-value">
+            Humidity: <span class="result">1&nbsp;%</span>
+          </p>
+          <p class="detail-value">
+            Wind: <span class="result">1&nbsp;m/s</span>
+          </p>
         </div>
       </aside>
     </div>
