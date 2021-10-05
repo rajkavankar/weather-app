@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- FONTAWSOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <form>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter location"
+          />
+          <button type="submit" class="btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <ul class="history">
+          <li class="list-item">&times;Delhi</li>
+          <li class="list-item">&times;Surat</li>
+        </ul>
+
+        <div class="details">
+          <p class="detail-head">Weather Details</p>
+          <p class="detail-value">Cloudy: 1%</p>
+          <p class="detail-value">Humidity: 1%</p>
+          <p class="detail-value">Wind: 1m/s</p>
+        </div>
+      </aside>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

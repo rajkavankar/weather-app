@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --search-btn: #d56c05;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  background-image: url("/images/clouds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* SIDEBAR CSS  */
+
+.sidebar {
+  margin-left: auto;
+  color: #fff;
+  height: 100%;
+  width: 450px;
+  position: relative;
+  z-index: 99;
+}
+
+.sidebar::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(25px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.sidebar form {
+  height: 90px;
+}
+
+.sidebar form .btn {
+  height: 100%;
+  background-color: var(--search-btn);
+  color: #333;
+  font-size: 2rem;
+  font-weight: lighter;
+  width: 90px;
+  float: right;
+  border: none;
+  cursor: pointer;
+}
